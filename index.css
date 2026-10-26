@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    display: flex;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+
+#nav-img{
+    max-width: 20px;
+    max-width: 20px;
+    margin-bottom: 10px;
+}
+.nav-text{
+    padding-top: 15px;
+}
+
+table {
+    margin: 20px 0 20px 50px;
+    border: 5px black solid;
+}
+
+
+thead tr th,
+tbody tr td {
+    width: 150px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: left;
+
+}
+
+#serial-id {
+    margin-left: 25px;
+    width: 140px;
+}
+
+.button-container{
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100px;
+}
+
+#button-div{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+#add-button{
+    margin-left: 50px;
+}
+
+.button-container:hover{
+    background-color: cadetblue;
+}
