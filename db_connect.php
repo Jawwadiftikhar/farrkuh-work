@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $dbname = "farrukhwork";
 $hostname = "localhost";
@@ -7,15 +7,9 @@ $password = "farrukhwork";
 
 $dsn = "mysql:host=$hostname;dbname=$dbname";
 
-try{
+try {
     $db = new PDO($dsn, $username, $password);
-    
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
+} catch (PDOException $e) {
+    die("Database connection failed: " . $e->getMessage());
 }
-catch(Exception $e){
-    return $e->getMessage();
-}
-
-
-?>
